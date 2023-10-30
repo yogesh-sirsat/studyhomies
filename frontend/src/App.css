@@ -1,0 +1,22 @@
+/* CSS */
+/* These styles target WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Track color */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3; /* Thumb color */
+    border-radius: 3px; /* Rounded corners */
+  }
+/* 
+  #chat-section {
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    scrollbar-width: none;
+  } */
