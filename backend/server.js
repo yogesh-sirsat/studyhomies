@@ -13,7 +13,8 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:3000",
   "https://localhost:3000",
-  process.env.FRONTEND_URL,
+  "https://studyhomies.com",
+  "https://www.studyhomies.com",
 ];
 app.use(
   cors({
