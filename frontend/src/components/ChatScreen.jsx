@@ -132,6 +132,21 @@ function ChatScreen() {
         path: "/peerjs",
         secure: true,
         debug: process.env.REACT_APP_PEERJS_DEBUG,
+        config: {
+          iceServers: [
+            { urls: "stun:stun.l.google.com:19302" },
+            {
+              urls: "turn:reeturn.net:3478", // UDP/TCP
+              username: "free",
+              credential: "free",
+            },
+            {
+              urls: "turns:freeturn.net:5349", // TLS
+              username: "free",
+              credential: "free",
+            },
+          ],
+        },
       });
     }
 
