@@ -5,7 +5,7 @@ const { Server } = require("socket.io");
 const cors = require("cors");
 const { Mutex } = require("async-mutex");
 
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 dotenv.config();
 
 const app = express();
@@ -15,6 +15,7 @@ const allowedOrigins = [
   "https://localhost:3000",
   "https://studyhomies.com",
   "https://www.studyhomies.com",
+  "https://studyhomies.yogeshsirsat.online",
 ];
 app.use(
   cors({
