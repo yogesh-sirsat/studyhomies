@@ -99,7 +99,11 @@ function ChatScreen() {
 
     if (!socket.current) {
       // Connect to the signaling server using Socket.io.
-      socket.current = io(process.env.REACT_APP_BACKEND_URL);
+      socket.current = io.connect(process.env.REACT_APP_BACKEND_URL, {
+        forceNew: true,
+        secure: true,
+        transports: ["polling"],
+      });
     }
 
     // Handle user connections.
