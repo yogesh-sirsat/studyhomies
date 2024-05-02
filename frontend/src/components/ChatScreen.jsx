@@ -140,7 +140,7 @@ function ChatScreen() {
           iceServers: [
             { urls: "stun:stun.l.google.com:19302" },
             {
-              urls: "turn:reeturn.net:3478", // UDP/TCP
+              urls: "turn:freeturn.net:3478", // UDP/TCP
               username: "free",
               credential: "free",
             },
@@ -303,7 +303,7 @@ function ChatScreen() {
         await initiateConnection();
       } catch (error) {
         console.log(error);
-        setError("Error intiating connection. Try again.");
+        setError("Error intiating connection. Try again. - " + error);
         setLoading(false);
         return;
       }
